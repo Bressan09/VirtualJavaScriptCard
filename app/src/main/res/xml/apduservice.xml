@@ -1,0 +1,20 @@
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:apduServiceBanner="@drawable/ic_launcher"
+    android:description="@string/servicedesc"
+    android:requireDeviceUnlock="true" >
+
+    <aid-group
+        android:category="payment"
+        android:description="@string/aiddescription" >
+        <aid-filter android:name="A0000000041010" /> <!-- Mastercard credit or debit -->
+        <aid-filter android:name="A0000000043060"/> <!--  Maestro (debit card) -->
+        <aid-filter android:name="315041592E5359532E4444463031" /> <!-- PSE -->
+        
+        <!-- "2PAY.SYS.DDF01" -->
+        <aid-filter android:name="325041592E5359532E4444463031" android:description="@string/PPSE"/>
+
+        <!-- VISA MSD AID -->
+        <aid-filter android:name="A0000000031010" android:description="@string/Visa"/>
+    </aid-group>
+
+</host-apdu-service>
