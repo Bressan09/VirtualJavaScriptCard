@@ -1,5 +1,0 @@
-/* HCE.js */
-
-function processApdu(apdu) {
-  return new Array(0x1, 0x2, 0x3, 0x90, 0x00);
-}

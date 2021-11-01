@@ -26,7 +26,6 @@ android {
 
 dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation files('libs/js.jar')
     implementation "androidx.core:core-ktx:1.7.0"
 }
 repositories {
